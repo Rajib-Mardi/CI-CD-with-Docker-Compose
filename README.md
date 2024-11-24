@@ -34,10 +34,10 @@ docker compose --version
 * CI step: Build artifact for Java Maven application 
 * CI step: Build and push Docker image to Docker Hub 
 * CD step: Deploy new application version with Docker Compose
-    * Configure Jenkins pipeline to deploy newly built image using Docker Compose on EC2 server.
-    *  Extract multiple Linux commands that are executed on remote server into a separate ```shell script``` and execute the script from Jenkinsfile
-    * This Jenkins pipeline stage (```deploy```) automates the deployment of a Docker image to an EC2 instance:
+ * Configure Jenkins pipeline to deploy newly built image using Docker Compose on EC2 server.
+ *  Extract multiple Linux commands that are executed on remote server into a separate ```shell script``` and execute the script from Jenkinsfile
 
+ * This Jenkins pipeline stage (```deploy```) automates the deployment of a Docker image to an EC2 instance:
    1. Stage Name: ```deploy``` - The step is part of the deployment process.
 
    2. Steps:
