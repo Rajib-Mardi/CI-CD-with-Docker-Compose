@@ -4,26 +4,31 @@
 ### Technologiesused:
 *  AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 
-* Installed Docker-Compose on EC2 Instance
-![ec2-user@ip-172-31-20-224_~ 14-04-2023 18_41_54](https://user-images.githubusercontent.com/96679708/232323227-b63c2db6-db1b-46cc-9b69-9e79a23b3c49.png)
 
+Create and configure an EC2 Instance on AWS
+Install Docker on remote EC2 Instance and add docker to ec2-user group
+
+Create ssh key credentials for EC2 server on Jenkins username as ec2-user and password as pem file of inside contents  kind as SSH username with password 
+* Install the  SSH agent plugin on Jenkins to  secure SSH key authentication
+
+
+* Installed Docker-Compose on EC2 Instance user use the Docker compose curl command and make it executable  the docker compose 
+
+```
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker compose --version
+```
 
 *  Created docker-compose.yaml file
+*  using docker compose we are going to start java maven application image and postgress database  container
 
-*  Configured Jenkinsfile to execute docker-compose command
+#### complete pipeline 
 
-   * We will use   ```script shell``` in stage deployment: 
-   * Deploy our application using the AWS server by using a script.
-
-     *IMAGE*
-*  Executed Jenkins Pipeline and deploy to AWS EC2 Instance
+![10 - Deploy to EC2 server from Jenkins Pipeline - CI_CD Part 3 _ TechW - Brave 24-11-2024 13_58_04](https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8)
 
 
 
-![feature_ec2-instace-docker-compose-yamlfile  my-multi-branch-pipeline   Jenkins  - Google Chrome 14-04-2023 20_12_56](https://user-images.githubusercontent.com/96679708/232323507-0ed94f6b-60a6-4116-ada1-21663c1a47fe.png)
-
-
-![ec2-user@ip-172-31-20-224_~ 14-04-2023 20_17_49](https://user-images.githubusercontent.com/96679708/232323478-78535621-0543-435a-bcf9-bb9cc8b413ea.png)
 
 ---------------------------------------
 
@@ -35,6 +40,7 @@
 #### Project Description:
 #### Adjusted Jenkinsfile to include dynamic versioning   [Jenkinsfile link](https://github.com/Rajib-Mardi/AWS-Services/blob/CD-with-dockerCompose/Jenkinsfile-CD)
 * Install the  SSH agent plugin on Jenkins to  secure SSH key authentication
+* configure the security-group inbound rule in aws for jenkins IP to access the ec2-server
 * CI step:Increment version 
 * CI step: Build artifact for Java Maven application 
 * CI step: Build and push Docker image to Docker Hub 
