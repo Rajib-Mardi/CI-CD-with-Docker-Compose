@@ -30,10 +30,10 @@ docker compose --version
 
 ![10 - Deploy to EC2 server from Jenkins Pipeline - CI_CD Part 3 _ TechW - Brave 24-11-2024 13_58_04](https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8)
 
-##### CI step:Increment version 
-##### CI step: Build artifact for Java Maven application 
-##### CI step: Build and push Docker image to Docker Hub 
-##### CD step: Deploy new application version with Docker Compose
+#### CI step:Increment version 
+#### CI step: Build artifact for Java Maven application 
+#### CI step: Build and push Docker image to Docker Hub 
+#### CD step: Deploy new application version with Docker Compose
  * Configure Jenkins pipeline to deploy newly built image using Docker Compose on EC2 server.
  *  Extract multiple Linux commands that are executed on remote server into a separate ```shell script``` and execute the script from Jenkinsfile
 
@@ -55,7 +55,7 @@ docker compose --version
     5. SSH Execution:
 
         * The ```ssh``` command runs the deployment script (```server-cmds.sh```) on the EC2 instance. The ```-o StrictHostKeyChecking=no``` option avoids SSH host key verification issues.
- ##### CD step: Commit the version update
+ #### CD step: Commit the version update
 
 #### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
 
