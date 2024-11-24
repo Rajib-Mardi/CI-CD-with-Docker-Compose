@@ -58,8 +58,9 @@ docker compose --version
  #### CD step: Commit the version update
 
 #### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
+![aws-multibranch pipeline » feature_ec2-instace-docker-compose-yamlfile #3 Console  Jenkins  - Google Chrome 24-11-2024 06_31_49](https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c)
 
-![feature_ec2-instace-docker-compose-yamlfile  my-multi-branch-pipeline   Jenkins  - Google Chrome 15-04-2023 17_11_52](https://user-images.githubusercontent.com/96679708/232329639-211b817e-8641-4aee-bf96-878f11594248.png)
 
 
-![MINGW64__c_Users_Rajib 15-04-2023 17_32_51](https://user-images.githubusercontent.com/96679708/232329645-77e4cfeb-ce78-4e2b-a53a-5a77ed9677b2.png)
+![ec2-user@ip-172-31-15-201_~ 24-11-2024 06_35_13](https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51)
+
