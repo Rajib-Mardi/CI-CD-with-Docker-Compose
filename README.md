@@ -60,8 +60,7 @@ docker compose --version
 <img src="https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c" width="800">
 
 
-#### Deploy to AWS EC2 Instance and java maven application and database  postgress container running
-
+#### Deploy to an AWS EC2 instance, and the Java Maven application and database postgres container are running in Docker.
 
 <img src="https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51" width="800">
 
