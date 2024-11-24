@@ -29,7 +29,7 @@ docker compose --version
  ### complete pipeline 
 
 
-<img src="(https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8" width="700">
+<img src="https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8" width="800">
 
 #### CI step:Increment version 
 #### CI step: Build artifact for Java Maven application 
@@ -61,9 +61,9 @@ docker compose --version
 #### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
 
 
-<img src="https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c" width="700">
+<img src="https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c" width="800">
 
 
 
-<img src="https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51" width="700">
+<img src="https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51" width="800">
 
