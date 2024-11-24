@@ -7,15 +7,15 @@
 #### Project Description:
 
 
-Create and configure an EC2 Instance on AWS
-Install Docker on remote EC2 Instance and add docker to ec2-user group
+Create and configure an EC2 Instance on AWS.
+Install Docker on remote EC2 Instance and add docker to ec2-user group.
 * configure the security-group inbound rule in aws for jenkins IP to access the ec2-server and port no.  for java maven application.
 
-Create ssh key credentials for EC2 server on Jenkins username as ec2-user and password as pem file of inside contents  kind as SSH username with password 
-* Install the  SSH agent plugin on Jenkins to  secure SSH key authentication
+Create ssh key credentials for EC2 server on Jenkins username as ec2-user and password as pem file of inside contents  kind as SSH username with password.
+* Install the  SSH agent plugin on Jenkins to  secure SSH key authentication.
 
 
-* Installed Docker-Compose on EC2 Instance user use the Docker compose curl command and make it executable  the docker compose 
+* Installed Docker-Compose on EC2 Instance user use the Docker compose curl command and make it executable  the docker compose.
 
 ```
 sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
@@ -56,13 +56,15 @@ docker compose --version
     5. SSH Execution:
 
         * The ```ssh``` command runs the deployment script (```server-cmds.sh```) on the EC2 instance. The ```-o StrictHostKeyChecking=no``` option avoids SSH host key verification issues.
- #### CD step: Commit the version update
+ #### CD step: Commit the version update.
 
-#### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
+####  Executed Jenkins Pipeline
 
 
 <img src="https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c" width="800">
 
+
+#### Deploy to AWS EC2 Instance and java maven application and database  postgress container running
 
 
 <img src="https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51" width="800">
