@@ -9,6 +9,7 @@
 
 * Create and configure an EC2 Instance on AWS.
 * Install Docker on remote EC2 Instance and add docker to ec2-user group.
+* Docker Login to DockerHub or another private Docker repository in an EC2 instance.
 * Configure the security-group inbound rule in AWS for Jenkins IP to access the EC2-server and port number for the Java Maven application.
 * Create ssh key credentials for the EC2 server on Jenkins, with the username ec2-user and the password in the form of a pem file with the contents of SSH username and password.
 * Install the  SSH agent plugin on Jenkins to  secure SSH key authentication.
