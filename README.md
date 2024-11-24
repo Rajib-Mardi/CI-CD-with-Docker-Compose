@@ -7,29 +7,25 @@
 #### Project Description:
 
 
-Create and configure an EC2 Instance on AWS.
-Install Docker on remote EC2 Instance and add docker to ec2-user group.
-* configure the security-group inbound rule in aws for jenkins IP to access the ec2-server and port no.  for java maven application.
-
-Create ssh key credentials for EC2 server on Jenkins username as ec2-user and password as pem file of inside contents  kind as SSH username with password.
+* Create and configure an EC2 Instance on AWS.
+* Install Docker on remote EC2 Instance and add docker to ec2-user group.
+* Configure the security-group inbound rule in AWS for Jenkins IP to access the EC2-server and port number for the Java Maven application.
+* Create ssh key credentials for the EC2 server on Jenkins, with the username ec2-user and the password in the form of a pem file with the contents of SSH username and password.
 * Install the  SSH agent plugin on Jenkins to  secure SSH key authentication.
 
-
 * Installed Docker-Compose on EC2 Instance user use the Docker compose curl command and make it executable  the docker compose.
-
 ```
 sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker compose --version
 ```
 
-*  Created docker-compose.yaml file
-*  using docker compose we are going to start java maven application image and postgress database  container
+*  Created docker-compose.yaml file: Using Docker Compose, start the Java Maven application image and the Progress database container.
 
  ### complete pipeline 
 
-
 <img src="https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8" width="800">
+
 
 #### CI step:Increment version 
 #### CI step: Build artifact for Java Maven application 
