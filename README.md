@@ -28,7 +28,8 @@ docker compose --version
 
  ### complete pipeline 
 
-![10 - Deploy to EC2 server from Jenkins Pipeline - CI_CD Part 3 _ TechW - Brave 24-11-2024 13_58_04](https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8)
+
+<img src="(https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8" width="700">
 
 #### CI step:Increment version 
 #### CI step: Build artifact for Java Maven application 
@@ -58,9 +59,11 @@ docker compose --version
  #### CD step: Commit the version update
 
 #### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
-![aws-multibranch pipeline » feature_ec2-instace-docker-compose-yamlfile #3 Console  Jenkins  - Google Chrome 24-11-2024 06_31_49](https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c)
+
+
+<img src="https://github.com/user-attachments/assets/e65b4435-72e3-4026-97e4-a7fe0884af1c" width="700">
 
 
 
-![ec2-user@ip-172-31-15-201_~ 24-11-2024 06_35_13](https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51)
+<img src="https://github.com/user-attachments/assets/7bbf52e4-0775-45b9-8dff-9e62b27a7d51" width="700">
 
