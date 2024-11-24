@@ -51,10 +51,10 @@ docker compose --version
    * sshagent(['ec2-server-key']): This block allows the use of a stored SSH private key (```ec2-server-key```) to authenticate when accessing the EC2 instance via SSH.
    4. Transfer Files:
 
-    * ```scp``` commands copy the ```server-cmds.sh``` and ```docker-compose.yaml``` files from the Jenkins workspace git repository to the EC2 instance (```/home/ec2-user``` directory).
+        * ```scp``` commands copy the ```server-cmds.sh``` and ```docker-compose.yaml``` files from the Jenkins workspace git repository to the EC2 instance (```/home/ec2-user``` directory).
     5. SSH Execution:
 
-    * The ```ssh``` command runs the deployment script (```server-cmds.sh```) on the EC2 instance. The ```-o StrictHostKeyChecking=no``` option avoids SSH host key verification issues.
+        * The ```ssh``` command runs the deployment script (```server-cmds.sh```) on the EC2 instance. The ```-o StrictHostKeyChecking=no``` option avoids SSH host key verification issues.
 * CD step: Commit the version update
 
 #### Executed Jenkins Pipeline and deploy to AWS EC2 Instance
