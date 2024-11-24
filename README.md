@@ -23,7 +23,7 @@ docker compose --version
 *  Created docker-compose.yaml file
 *  using docker compose we are going to start java maven application image and postgress database  container
 
-#### complete pipeline 
+ ### complete pipeline 
 
 ![10 - Deploy to EC2 server from Jenkins Pipeline - CI_CD Part 3 _ TechW - Brave 24-11-2024 13_58_04](https://github.com/user-attachments/assets/71fd4949-80be-474d-8adf-028a9f5102e8)
 
